@@ -45,18 +45,3 @@ def check_keys(key, dict):
 teams_with_yearly_plus_minus = yearly_team_plus_minus(teams_df, regular_season_df)
 
 teams_with_yearly_plus_minus.to_sql('team_data', conn, if_exists='replace')
-
-
-# """
-# Data Structures: 
-
-# {"Duke": {"3-pointers-for": [8, 12, 4, 13, 9],
-#             "3-pointers-allowed": []
-
-#     }
-# }
-# Output table: 
-
-# 1 | Duke | +150 | 4.5 | 3.5 | 
-
-# """
