@@ -2,8 +2,10 @@ import pandas as pd
 import sqlite3 as lite
 
 conn = lite.connect('./data/database.sqlite')
+
 regular_season_query = "SELECT * FROM RegularSeasonCompactResults;"
 teams_query = "SELECT * FROM Teams;"
+
 regular_season_df = pd.read_sql(regular_season_query, conn)
 regular_season_df = regular_season_df[regular_season_df['Year']]
 teams_df = pd.read_sql(teams_query, conn)
