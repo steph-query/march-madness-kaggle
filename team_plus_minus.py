@@ -38,7 +38,7 @@ def yearly_team_plus_minus(teams_df, games_df):
 
 def check_keys(key, dict):
     try:
-        return dict[key]
+        return dict[key]['average']
     except:
         return None
 
