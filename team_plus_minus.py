@@ -29,7 +29,7 @@ def calc_diffs(dataframe):
     return diff_dict
 
 def yearly_team_plus_minus(teams_df, games_df):
-    years = [2012, 2013, 2014, 2015]
+    years = [2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015]
     for year in years:
         games_year = games_df[games_df['Season'] == year]
         games_year_diffs = calc_diffs(games_year)

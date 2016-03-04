@@ -66,7 +66,7 @@ def check_keys(team, category, feature_dict):
         return None
 
 def yearly_team_features(teams_df, games_df):
-    years = [2012, 2013, 2014, 2015]
+    years = [2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015]
     for year in years:
         games_year = games_df[games_df['Season'] == year]
         games_year_stats = calc_team_season_totals(games_year)
